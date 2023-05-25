@@ -31,7 +31,7 @@ function wordsWithDigits2(string) {
   console.log(
     string.split(" ").filter(function (element) {
       for (let i = 0; i <= element.length; i++) {
-        if (element[i] == "0" || Boolean(Number(element[i]))) {
+        if (!isNaN(element[i])) {
           return element;
         }
       }
