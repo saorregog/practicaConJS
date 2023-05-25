@@ -13,7 +13,7 @@ function wordsWithDigits1(string) {
       }
     } else {
       for (let j = 0; j <= 9; j++) {
-        if (string[i] == j) {
+        if (string[i] === String(j)) {
           hasDigits = true;
           break;
         }
@@ -31,7 +31,7 @@ function wordsWithDigits2(string) {
   console.log(
     string.split(" ").filter(function (element) {
       for (let i = 0; i <= element.length; i++) {
-        if (element[i] == 0 || Boolean(Number(element[i]))) {
+        if (element[i] == "0" || Boolean(Number(element[i]))) {
           return element;
         }
       }
