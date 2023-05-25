@@ -16,6 +16,10 @@ function numerosCuadradosPerfectos(arreglo) {
       }
     }
 
+    /* if (raizCuadradaTexto.includes(".")) {
+      esCuadradoPerfecto = false;
+    } */
+
     if (esCuadradoPerfecto) {
       arregloResultado[arregloResultado.length] = arreglo[i];
     }
