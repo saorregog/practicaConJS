@@ -1,6 +1,7 @@
 // DISEÑA UNA FUNCIÓN EN JS QUE RECIBA COMO PARÁMETRO UN ENTERO POSITIVO "n" Y RETORNE UN ARREGLO CON LOS PRIMEROS "n" NÚMEROS IMPARES.
 
-function firstOddNumbers(number) {
+// VERSIÓN 1
+function firstOddNumbers1(number) {
   let count = 0;
   let oddNumber = 1;
   let oddNumbersArray = new Array();
@@ -14,4 +15,17 @@ function firstOddNumbers(number) {
   console.log(oddNumbersArray);
 }
 
-firstOddNumbers(5);
+firstOddNumbers1(5);
+
+//VERSIÓN 2
+function firstOddNumbers2(number) {
+  let oddNumbersArray = new Array();
+
+  for (let i = 1; i <= number; i++) {
+    oddNumbersArray.push(2 * i - 1);
+  }
+
+  console.log(oddNumbersArray);
+}
+
+firstOddNumbers2(5);
