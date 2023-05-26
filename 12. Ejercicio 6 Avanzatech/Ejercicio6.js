@@ -1,7 +1,7 @@
 // EJERCICIO 5 PERO ASUMIENDO QUE EL NÚMERO PUEDE SER NEGATIVO.
 
 // FUNCIÓN IMPERATIVA
-function sortedDigits1(number) {
+function reversedDigits1(number) {
   let numberAsString = "" + number;
 
   let sortedArrayOfDigits = new Array();
@@ -16,10 +16,10 @@ function sortedDigits1(number) {
   console.log(sortedArrayOfDigits);
 }
 
-sortedDigits1(-12345);
+reversedDigits1(-12345);
 
 // FUNCIÓN DECLARATIVA
-function sortedDigits2(number) {
+function reversedDigits2(number) {
   console.log(
     String(number)
       .split("")
@@ -33,4 +33,4 @@ function sortedDigits2(number) {
   );
 }
 
-sortedDigits2(-12345);
+reversedDigits2(-12345);
