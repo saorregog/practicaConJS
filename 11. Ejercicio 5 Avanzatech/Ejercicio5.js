@@ -1,7 +1,7 @@
 // DISEÑA UNA FUNCIÓN EN JS QUE RECIBA COMO PARÁMETRO UN NÚMERO ENTERO POSITIVO Y RETORNE UN ARREGLO CON LOS DÍGITOS DEL NÚMERO EN ORDEN INVERSO.
 
 // FUNCIÓN IMPERATIVA
-function sortedDigits1(positiveNumber) {
+function reversedDigits1(positiveNumber) {
   let positiveNumberAsString = "" + positiveNumber;
 
   let sortedArrayOfDigits = new Array();
@@ -14,10 +14,10 @@ function sortedDigits1(positiveNumber) {
   console.log(sortedArrayOfDigits);
 }
 
-sortedDigits1(12345);
+reversedDigits1(12345);
 
 // FUNCIÓN DECLARATIVA
-function sortedDigits2(positiveNumber) {
+function reversedDigits2(positiveNumber) {
   console.log(
     String(positiveNumber)
       .split("")
@@ -28,4 +28,4 @@ function sortedDigits2(positiveNumber) {
   );
 }
 
-sortedDigits2(12345);
+reversedDigits2(12345);
